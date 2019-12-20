@@ -250,7 +250,7 @@ public class WifiConfigurationUtil {
     public static boolean hasMacRandomizationSettingsChanged(WifiConfiguration existingConfig,
             WifiConfiguration newConfig) {
         if (existingConfig == null) {
-            return newConfig.macRandomizationSetting != WifiConfiguration.RANDOMIZATION_PERSISTENT;
+            return newConfig.macRandomizationSetting != WifiConfiguration.RANDOMIZATION_ALWAYS;
         }
         return newConfig.macRandomizationSetting != existingConfig.macRandomizationSetting;
     }
